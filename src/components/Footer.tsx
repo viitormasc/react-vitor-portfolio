@@ -1,0 +1,127 @@
+import { Link } from "react-router-dom";
+
+export default function Footer() {
+  return (
+    <footer
+      className="
+        relative w-5xl py-5 px-15 my-0 mx-auto overflow-hidden
+        bg-white text-black border-t border-l border-r border-black/20 shadow-2xl
+
+        dark:bg-black dark:text-white dark:border-white/10
+      "
+    >
+      {/* CONTENT */}
+      <div className="mb-20">
+        <h2 className="text-4xl font-bold leading-snug">
+          Want the best on your team? Let’s connect{" "}
+          <Link
+            className="
+              text-blue-600 underline decoration-blue-600 underline-offset-4
+              hover:text-blue-500 transition
+
+              dark:text-blue-400 dark:decoration-blue-400
+              dark:hover:text-blue-300
+            "
+            to="mailto:viitormasc@gmail.com"
+          >
+            via email
+          </Link>{" "}
+          to collaborate!
+        </h2>
+      </div>
+
+      {/* BOTTOM GRID */}
+      <div
+        className="
+          grid grid-cols-1 gap-10 pt-12
+          border-t border-black/10
+
+          dark:border-white/10
+
+          sm:grid-cols-2 lg:grid-cols-4
+        "
+      >
+        {/* Name */}
+        <div>
+          <p className="text-lg font-semibold">Vitor Mascarenhas</p>
+          <p className="mt-2 text-sm text-black/60 dark:text-white/60">
+            © {new Date().getFullYear()} | All rights reserved.
+          </p>
+        </div>
+
+        {/* Socials */}
+        <div>
+          <p className="mb-4 text-lg font-semibold">Socials</p>
+          <ul className="space-y-2 text-black/70 dark:text-white/70">
+            <li>
+              <Link
+                className="hover:text-black dark:hover:text-white transition"
+                target="_blank"
+                to="https://www.linkedin.com/in/vittormasc/"
+              >
+                LinkedIn
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="hover:text-black dark:hover:text-white transition"
+                target="_blank"
+                to="https://github.com/vittormasc"
+              >
+                Github
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        {/* Contact */}
+        <div>
+          <p className="mb-4 text-lg font-semibold">Contact</p>
+          <ul className="space-y-2 text-black/70 dark:text-white/70">
+            <li>
+              <Link
+                className="hover:text-black dark:hover:text-white transition"
+                to="mailto:viitormasc@gmail.com"
+              >
+                viitormasc@gmail.com
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="hover:text-black dark:hover:text-white transition"
+                target="_blank"
+                to="https://api.whatsapp.com/send?phone=5586999277389"
+              >
+                WhatsApp
+              </Link>
+            </li>
+          </ul>
+        </div>
+
+        {/* Extras */}
+        <div>
+          <p className="mb-4 text-lg font-semibold">More</p>
+          <ul className="space-y-2 text-black/70 dark:text-white/70">
+            <li>
+              <Link
+                className="hover:text-black dark:hover:text-white transition"
+                target="_blank"
+                to="/resume.pdf"
+              >
+                Resume
+              </Link>
+            </li>
+            <li>
+              <a
+                className="hover:text-black dark:hover:text-white transition"
+                href="#portfolio"
+              >
+                Portfolio
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  );
+}
