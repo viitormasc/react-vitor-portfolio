@@ -7,11 +7,10 @@ WORKDIR /usr/src/app
 
 # Copy package files and install all deps (including dev)
 COPY package*.json ./
-RUN npm ci
+RUN npm install 
 
 COPY . .
 
-# ARG VITE_API_URL
 RUN npm run build
 
 # Production stage
