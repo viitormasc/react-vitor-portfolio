@@ -1,0 +1,20 @@
+name: vitor-portfolio 
+
+services:
+  portfoliofront:
+    build:
+      context: ./
+      target: production 
+    container_name: portfoliofrontend
+    restart: unless-stopped
+    networks:
+      - caddy_net 
+    # env_file: client/.env
+
+  volumes:
+  caddy_data:
+  caddy_config:
+networks:
+  caddy_net:
+    external: true
+

@@ -12,13 +12,8 @@ import { subtitle, title } from "@/components/primitives";
 import { siteConfig } from "@/config/site";
 
 export const Hero = () => {
-  function handleMouseMove(e) {
-    console.log(e.currentTarget.getBoundingClientRect());
-  }
-
   return (
     <section
-      id="home"
       className="relative h-[600px] mt-[-50px] 
         bg-white dark:bg-black
         [background-image:linear-gradient(var(--grid-color)_1px,transparent_1px),linear-gradient(90deg,var(--grid-color)_1px,transparent_1px)]
@@ -26,7 +21,7 @@ export const Hero = () => {
         mx-[-50px]
         [--grid-color:rgba(0,0,0,0.05)]
         dark:[--grid-color:rgba(255,255,255,0.05)]"
-      onMouseMove={handleMouseMove}
+      id="home"
     >
       <div
         className="

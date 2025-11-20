@@ -7,7 +7,6 @@ import BlogPage from "@/pages/blog";
 import AboutPage from "@/pages/about";
 
 function App() {
-  function name() {}
   return (
     <Routes>
       <Route element={<IndexPage />} path="/" />

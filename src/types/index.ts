@@ -7,4 +7,5 @@ export type IconSvgProps = SVGProps<SVGSVGElement> & {
 export type LogoImgProps = {
   size?: number;
   height?: number;
+  className?: string;
 };
