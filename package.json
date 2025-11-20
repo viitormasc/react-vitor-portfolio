@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsgo && vite build",
     "lint": "eslint --fix",
     "preview": "vite preview"
   },
@@ -28,6 +28,7 @@
     "@tailwindcss/postcss": "4.1.11",
     "@tailwindcss/vite": "4.1.11",
     "@types/react-icons": "^2.2.7",
+    "@typescript/native-preview": "^7.0.0-dev.20251120.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^11.18.2",
