@@ -9,6 +9,7 @@ const TechSection: React.FC = () => {
         bg-white text-black
         dark:bg-black dark:text-white
       "
+      id="technologies"
     >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl font-bold">Technologies</h2>

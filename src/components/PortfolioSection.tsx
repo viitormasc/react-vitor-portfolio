@@ -10,12 +10,12 @@ const PortfolioSection: React.FC = () => {
         bg-white text-black
         dark:bg-black dark:text-white
       "
-      id="portfolio"
+      id="projects"
     >
       <div className="relative w-full">
         <BackgroundBeams className="absolute inset-0" />
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold">Portfolio</h2>
+          <h2 className="text-4xl font-bold">Projects</h2>
 
           <p className="mt-4 max-w-xl text-black/60 dark:text-neutral-400">
             Some of the projects I've built recently, including full-stack apps,

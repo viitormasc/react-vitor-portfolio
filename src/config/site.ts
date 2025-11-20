@@ -6,62 +6,43 @@ export const siteConfig = {
   navItems: [
     {
       label: "Home",
-      href: "/",
+      href: "#home",
     },
     {
-      label: "Docs",
-      href: "/docs",
+      label: "Technologies",
+      href: "#technologies",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
+      label: "Projects",
+      href: "#projects",
     },
     {
-      label: "Blog",
-      href: "/blog",
-    },
-    {
-      label: "About",
-      href: "/about",
+      label: "Contact",
+      href: "#contact",
     },
   ],
   navMenuItems: [
     {
-      label: "Profile",
-      href: "/profile",
+      label: "Home",
+      href: "#home",
     },
     {
-      label: "Dashboard",
-      href: "/dashboard",
+      label: "Technologies",
+      href: "#technologies",
     },
     {
       label: "Projects",
-      href: "/projects",
+      href: "#projects",
     },
     {
-      label: "Team",
-      href: "/team",
-    },
-    {
-      label: "Calendar",
-      href: "/calendar",
-    },
-    {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
+      label: "Contact",
+      href: "#contact",
     },
   ],
   links: {
-    github: "https://github.com/heroui-inc/heroui",
+    github: "https://github.com/viitormasc",
     twitter: "https://twitter.com/hero_ui",
-    linkedin: "https://discord.gg/9b6yyZKmH4",
+    linkedin: "https://linkedin.com/in/vitor-mascarenhas",
+    whatsapp: "https://api.whatsapp.com/send?phone=5586999277389",
   },
 };

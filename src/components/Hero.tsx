@@ -18,6 +18,7 @@ export const Hero = () => {
 
   return (
     <section
+      id="home"
       className="relative h-[600px] mt-[-50px] 
         bg-white dark:bg-black
         [background-image:linear-gradient(var(--grid-color)_1px,transparent_1px),linear-gradient(90deg,var(--grid-color)_1px,transparent_1px)]
@@ -85,7 +86,7 @@ export const Hero = () => {
               radius: "full",
               variant: "shadow",
             })}
-            href={siteConfig.links.github}
+            href={siteConfig.links.linkedin}
           >
             <Linkedin size={14} />
             Linkedin

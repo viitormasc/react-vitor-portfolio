@@ -12,7 +12,7 @@ import { Linkedin } from "lucide-react";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
-import { TwitterIcon, GithubIcon } from "@/components/icons";
+import { GithubIcon } from "@/components/icons";
 import { Logo } from "@/components/icons";
 
 export const Navbar = () => {
@@ -31,9 +31,9 @@ export const Navbar = () => {
         <div className="hidden lg:flex gap-4 justify-center ml-14   bg-transparent border-1 dark:border-white/30 border-black/20 py-3 px-8 rounded-2xl ">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
-              <Link className={""} color="foreground" href={item.href}>
+              <a className={""} color="foreground" href={item.href}>
                 {item.label}
-              </Link>
+              </a>
             </NavbarItem>
           ))}
         </div>
@@ -44,9 +44,9 @@ export const Navbar = () => {
         justify="end"
       >
         <NavbarItem className="hidden sm:flex gap-2">
-          <Link isExternal href={siteConfig.links.twitter} title="Twitter">
-            <TwitterIcon className="text-default-500" />
-          </Link>
+          {/* <Link isExternal href={siteConfig.links.twitter} title="Twitter"> */}
+          {/*   <TwitterIcon className="text-default-500" /> */}
+          {/* </Link> */}
           <Link isExternal href={siteConfig.links.linkedin} title="Linkedin">
             <Linkedin className="text-default-500" />
           </Link>

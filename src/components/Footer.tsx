@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import { siteConfig } from "@/config/site";
+
 export default function Footer() {
   return (
     <footer
@@ -9,6 +11,7 @@ export default function Footer() {
 
         dark:bg-black dark:text-white dark:border-white/10
       "
+      id="contact"
     >
       {/* CONTENT */}
       <div className="mb-20">
@@ -57,7 +60,7 @@ export default function Footer() {
               <Link
                 className="hover:text-black dark:hover:text-white transition"
                 target="_blank"
-                to="https://www.linkedin.com/in/vittormasc/"
+                to={siteConfig.links.linkedin}
               >
                 LinkedIn
               </Link>
@@ -66,7 +69,7 @@ export default function Footer() {
               <Link
                 className="hover:text-black dark:hover:text-white transition"
                 target="_blank"
-                to="https://github.com/vittormasc"
+                to={siteConfig.links.github}
               >
                 Github
               </Link>
@@ -90,7 +93,7 @@ export default function Footer() {
               <Link
                 className="hover:text-black dark:hover:text-white transition"
                 target="_blank"
-                to="https://api.whatsapp.com/send?phone=5586999277389"
+                to={siteConfig.links.whatsapp}
               >
                 WhatsApp
               </Link>
@@ -114,9 +117,9 @@ export default function Footer() {
             <li>
               <a
                 className="hover:text-black dark:hover:text-white transition"
-                href="#portfolio"
+                href="#projects"
               >
-                Portfolio
+                Projects
               </a>
             </li>
           </ul>
