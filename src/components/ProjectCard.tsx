@@ -1,3 +1,5 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import { IoCodeSlashOutline } from "react-icons/io5";
 
 interface ProjectCardProps {
@@ -33,9 +35,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       {/* IMAGE */}
       <div className="w-full overflow-hidden rounded-xl">
         <img
-          src={image}
           alt={title}
           className="w-full h-48 object-cover rounded-xl"
+          src={image}
         />
       </div>
 
@@ -55,30 +57,31 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       {/* BUTTONS */}
       <div className="flex gap-4 mt-6">
         {liveUrl && (
-          <a
-            href={liveUrl}
-            target="_blank"
+          <Link
             className="
-              rounded-lg px-4 py-2 font-medium transition
+              rounded-lg px-4 py-2 font-medium transition 
               bg-blue-600 text-white hover:bg-blue-500
 
               dark:bg-blue-600 dark:text-white dark:hover:bg-blue-500
             "
+            target="_blank"
+            to={liveUrl}
           >
             Live App
-          </a>
+          </Link>
         )}
 
         {githubUrl && (
           <a
-            href={githubUrl}
-            target="_blank"
             className="
               rounded-lg px-4 py-2 font-medium flex gap-2 items-center transition
 
               bg-neutral-200 text-black hover:bg-neutral-300
               dark:bg-neutral-800 dark:text-white dark:hover:bg-neutral-700
             "
+            href={githubUrl}
+            rel="noreferrer"
+            target="_blank"
           >
             <IoCodeSlashOutline size={21} />
             Source code

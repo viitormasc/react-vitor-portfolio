@@ -1,3 +1,5 @@
+import React from "react";
+
 import ProjectCard from "./ProjectCard";
 import projects from "./projects";
 import { BackgroundBeams } from "./ui/shadcn-io/background-beams";
@@ -13,7 +15,7 @@ const PortfolioSection: React.FC = () => {
       id="projects"
     >
       <div className="relative w-full">
-        <BackgroundBeams className="absolute inset-0" />
+        <BackgroundBeams className="absolute inset-0 pointer-events-none" />
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold">Projects</h2>
 

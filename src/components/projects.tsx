@@ -1,4 +1,3 @@
-import StudyTimerPhoto from '@/assets/Study Timer App PC Web Google Ad Landscape.png';
 import { ReactNode } from "react";
 import {
   SiDocker,
@@ -12,6 +11,7 @@ import {
   SiTypescript,
 } from "react-icons/si";
 
+import StudyTimerPhoto from "@/assets/Study Timer App PC Web Google Ad Landscape.png";
 
 interface ProjectItem {
   title: string;
@@ -28,7 +28,26 @@ const projects: ProjectItem[] = [
     description:
       "A productivity app to help you hit your goals! With time and goals tracking, nice downloadable dashboards to visualize your study habbits and help of the Foxy AI to keep you motivated and with nice insights about your habbits and make you hit your goals!",
     image: StudyTimerPhoto,
-    liveUrl: "https://yourliveapp.com",
+    liveUrl: "https://studytimerapp.com",
+    githubUrl: "https://github.com/viitormasc/study-timer-dockerized-app",
+    techIcons: [
+      <SiReact color="#61dafb" />,
+      <SiTailwindcss color="#38bdf8" />,
+      <SiTypescript color="#3178c6" />,
+      <SiNodedotjs color="#5fa04e" />,
+      <SiMongodb color="#4db33d" />,
+      <SiExpress color="white" />,
+      <SiStripe color="#635bff" />,
+      <SiDocker color="#2496ed" />,
+    ],
+  },
+
+  {
+    title: "Open source SaaS starter Kit",
+    description:
+      "A MERN stack SaaS starter kit with full authentication strategies (google and local, password recovery, email confirmation and more), payments with stripe, user management, and a nice UI with dark/light mode to help you start your next subscription based SaaS app in no time!",
+    image: "",
+    liveUrl: "https://studytimerapp.com",
     githubUrl: "https://github.com/yourrepo",
     techIcons: [
       <SiReact color="#61dafb" />,
@@ -36,32 +55,18 @@ const projects: ProjectItem[] = [
       <SiTypescript color="#3178c6" />,
       <SiNodedotjs color="#5fa04e" />,
       <SiMongodb color="#4db33d" />,
-      <SiExpress color='white' />,
-      <SiDocker color="#2496ed" />
-    ],
-  },
-
-  {
-    title: "E-commerce Payments",
-    description:
-      "A lightweight Stripe-powered checkout service with secure session creation and webhook handling.",
-    image: '',
-    liveUrl: "https://studytimerapp.com",
-    githubUrl: "https://github.com/yourrepo",
-    techIcons: [
-      <SiTypescript color="#3178c6" />,
+      <SiExpress color="white" />,
       <SiStripe color="#635bff" />,
-      <SiNodedotjs color="#5fa04e" />,
       <SiDocker color="#2496ed" />,
     ],
   },
 
   {
-    title: "Dashboard Analytics",
+    title: "Code To Text AI",
     description:
-      "A fast performance dashboard with server-side rendering, charts, and responsive UI.",
+      "A command line applicatio that help developers condense code on the same directorie on a sinle text file making it easier for LLMs to process and understand the codebase, give more accurate answers and get more context on small projects without the high cost of using API calls to read your files multiple times",
     image: "/images/dashboard.png",
-    liveUrl: "https://yourdashboard.com",
+    githubUrl: "https://github.com/viitormasc/code-to-text-forAi",
     techIcons: [
       <SiNextdotjs color="white" />,
       <SiReact color="#61dafb" />,
