@@ -1,8 +1,9 @@
 import { Avatar } from "@heroui/avatar";
 import { Link } from "@heroui/link";
 import { button as buttonStyles } from "@heroui/theme";
-import { Linkedin } from "lucide-react";
+import { Linkedin, DownloadIcon } from "lucide-react";
 
+import resume from "../assets/Resume vitor dev.pdf";
 import photo from "../assets/perfilvitor.png";
 
 import TypingText from "./ui/shadcn-io/typing-text/index";
@@ -93,6 +94,10 @@ export const Hero = () => {
           >
             <GithubIcon size={20} />
             GitHub
+          </Link>
+          <Link href={resume} target="_blank">
+            {" "}
+            <DownloadIcon className="mr-1" /> Download Cv
           </Link>
         </div>
       </div>

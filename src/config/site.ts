@@ -45,4 +45,5 @@ export const siteConfig = {
     linkedin: "https://linkedin.com/in/vitor-mascarenhas",
     whatsapp: "https://api.whatsapp.com/send?phone=5586999277389",
   },
+  email: "dev@vitormascarenhas.online",
 };

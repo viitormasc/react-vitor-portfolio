@@ -25,7 +25,7 @@ export default function Footer() {
               dark:text-blue-400 dark:decoration-blue-400
               dark:hover:text-blue-300
             "
-            to="mailto:viitormasc@gmail.com"
+            to={`mailto:${siteConfig.email}`}
           >
             via email
           </Link>{" "}
@@ -84,9 +84,9 @@ export default function Footer() {
             <li>
               <Link
                 className="hover:text-black dark:hover:text-white transition"
-                to="mailto:viitormasc@gmail.com"
+                to={`mailto:${siteConfig.email}`}
               >
-                viitormasc@gmail.com
+                {siteConfig.email}
               </Link>
             </li>
             <li>
