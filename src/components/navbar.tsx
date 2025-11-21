@@ -1,10 +1,10 @@
+import React from "react";
 import { Link } from "@heroui/link";
 import {
   Navbar as HeroUINavbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
 } from "@heroui/navbar";
@@ -58,11 +58,15 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
+        <Link isExternal href={siteConfig.links.linkedin} title="Linkedin">
+          <Linkedin className="text-default-500" />
+        </Link>
+
         <Link isExternal href={siteConfig.links.github}>
           <GithubIcon className="text-default-500" />
         </Link>
         <ThemeSwitch />
-        <NavbarMenuToggle />
+        {/* <NavbarMenuToggle /> */}
       </NavbarContent>
 
       <NavbarMenu>
@@ -77,8 +81,11 @@ export const Navbar = () => {
                       ? "danger"
                       : "foreground"
                 }
-                href="#"
+                href={item.href}
                 size="lg"
+                onClick={() => {
+                  console.log("clicked");
+                }}
               >
                 {item.label}
               </Link>

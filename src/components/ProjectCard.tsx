@@ -24,10 +24,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       className="
         rounded-2xl 
         bg-[#f5f5f5] text-black
-        hover:bg-[#e9e9e9]
 
         dark:bg-[#111111] dark:text-white
-        dark:hover:bg-[#1a1a1a]
 
         p-6 shadow-lg transition
       "
