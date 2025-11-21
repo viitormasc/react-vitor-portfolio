@@ -3,7 +3,7 @@ import { Link } from "@heroui/link";
 import { button as buttonStyles } from "@heroui/theme";
 import { Linkedin } from "lucide-react";
 
-import photo from "../assets/CodeByVitor-withotu-bg.png";
+import photo from "../assets/perfilvitor.png";
 
 import TypingText from "./ui/shadcn-io/typing-text/index";
 
@@ -42,7 +42,7 @@ export const Hero = () => {
       <div className="flex flex-col items-center justify-center gap-4 py-8 md:py-10 ">
         <Avatar
           alt="Profile photo"
-          className="bg-transparent border-1 border-black/10 dark:border-white/20 size-25 "
+          className="bg-transparent border-2 border-black dark:border-white size-35 "
           name="Profile photo"
           src={photo}
         />

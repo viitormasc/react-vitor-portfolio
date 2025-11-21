@@ -1,15 +1,19 @@
 import { ReactNode } from "react";
 import {
+  SiCaddy,
   SiDocker,
   SiExpress,
   SiMongodb,
-  SiNextdotjs,
   SiNodedotjs,
   SiReact,
   SiStripe,
   SiTailwindcss,
   SiTypescript,
 } from "react-icons/si";
+import React from "react";
+
+import sassStarterKit from "../assets/print2.png";
+import codetotext from "../assets/codetotext.png";
 
 import StudyTimerPhoto from "@/assets/Study Timer App PC Web Google Ad Landscape.png";
 
@@ -26,7 +30,7 @@ const projects: ProjectItem[] = [
   {
     title: "Study Timer App",
     description:
-      "A productivity app to help you hit your goals! With time and goals tracking, nice downloadable dashboards to visualize your study habbits and help of the Foxy AI to keep you motivated and with nice insights about your habbits and make you hit your goals!",
+      "A productivity app designed to help you hit your goals! It features time and goal tracking, downloadable dashboards to visualize your study habits, and support from Foxy AI to keep you motivated with helpful insights — all aimed at helping you stay consistent and achieve your objectives.",
     image: StudyTimerPhoto,
     liveUrl: "https://studytimerapp.com",
     githubUrl: "https://github.com/viitormasc/study-timer-dockerized-app",
@@ -39,16 +43,18 @@ const projects: ProjectItem[] = [
       <SiExpress color="white" />,
       <SiStripe color="#635bff" />,
       <SiDocker color="#2496ed" />,
+      <SiCaddy color="#3fa14a" />,
     ],
   },
 
   {
     title: "Open source SaaS starter Kit",
     description:
-      "A MERN stack SaaS starter kit with full authentication strategies (google and local, password recovery, email confirmation and more), payments with stripe, user management, and a nice UI with dark/light mode to help you start your next subscription based SaaS app in no time!",
-    image: "",
-    liveUrl: "https://studytimerapp.com",
-    githubUrl: "https://github.com/yourrepo",
+      "A MERN-stack SaaS starter kit featuring full authentication (Google and local), password recovery, email confirmation, Stripe payments, user management, and a polished UI with dark/light mode — everything you need to kickstart your next subscription-based SaaS app in no time!",
+    image: sassStarterKit,
+    // liveUrl: "https://studytimerapp.com",
+    githubUrl:
+      "https://github.com/viitormasc/SaaS-Subscription-Auth-Starter-Kit",
     techIcons: [
       <SiReact color="#61dafb" />,
       <SiTailwindcss color="#38bdf8" />,
@@ -58,20 +64,19 @@ const projects: ProjectItem[] = [
       <SiExpress color="white" />,
       <SiStripe color="#635bff" />,
       <SiDocker color="#2496ed" />,
+      <SiCaddy color="#3fa14a" />,
     ],
   },
 
   {
     title: "Code To Text AI",
     description:
-      "A command line applicatio that help developers condense code on the same directorie on a sinle text file making it easier for LLMs to process and understand the codebase, give more accurate answers and get more context on small projects without the high cost of using API calls to read your files multiple times",
-    image: "/images/dashboard.png",
+      "A command-line application that helps developers condense code from the same directory into a single text file, making it easier for LLMs to process and understand the codebase, provide more accurate answers, and gain more context on small projects — all without the high cost of using API calls to read your files multiple times.",
+    image: codetotext,
     githubUrl: "https://github.com/viitormasc/code-to-text-forAi",
     techIcons: [
-      <SiNextdotjs color="white" />,
-      <SiReact color="#61dafb" />,
-      <SiTailwindcss color="#38bdf8" />,
       <SiTypescript color="#3178c6" />,
+      <SiNodedotjs color="#5fa04e" />,
     ],
   },
 ];
