@@ -1,50 +1,42 @@
-# Vite & HeroUI Template
+# My Portfolio
 
-This is a template for creating applications using Vite and HeroUI (v2).
+This repository contains the source code for my personal developer portfolio. It showcases my work, experience, and projects in a clean, modern, and responsive interface.
 
-[Try it on CodeSandbox](https://githubbox.com/heroui-inc/vite-template)
+## 🚀 Tech Stack
 
-## Technologies Used
+- **React.js**  
+- **Node.js**  
+- **TypeScript**
 
-- [Vite](https://vitejs.dev/guide/)
-- [HeroUI](https://heroui.com)
-- [Tailwind CSS](https://tailwindcss.com)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org)
-- [Framer Motion](https://www.framer.com/motion)
+## 📌 Demo
 
-## How to Use
+Live website: **https://dev.vitormascarenhas.online**
 
-To clone the project, run the following command:
+## 📖 Overview
 
-```bash
-git clone https://github.com/heroui-inc/vite-template.git
-```
+This portfolio is designed to give recruiters, companies, and collaborators a clear view of my skills and the real projects I've built.  
+It includes:
 
-### Install dependencies
+- About me  
+- Skills & tech stack  
+- Featured projects  
+- Contact and social links  
 
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
+🧩 Features
 
-```bash
-npm install
-```
+Fully responsive UI
 
-### Run the development server
+Built with modern React and TypeScript
 
-```bash
-npm run dev
-```
+Clean folder structure
 
-### Setup pnpm (optional)
+Fast and lightweight
 
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
+Easy to maintain and extend
 
-```bash
-public-hoist-pattern[]=*@heroui/*
-```
 
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
+📬 Contact
 
-## License
+Feel free to reach out!
 
-Licensed under the [MIT license](https://github.com/heroui-inc/vite-template/blob/main/LICENSE).
+Vitor Mascarenhas
