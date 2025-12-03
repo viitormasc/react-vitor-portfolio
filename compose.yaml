@@ -9,7 +9,6 @@ services:
     restart: unless-stopped
     networks:
       - caddy_net 
-    # env_file: client/.env
 networks:
   caddy_net:
     external: true
