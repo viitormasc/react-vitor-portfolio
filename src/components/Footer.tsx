@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import resume from "../assets/Resume vitor dev.pdf";
 
 import { siteConfig } from "@/config/site";
 
@@ -109,7 +110,7 @@ export default function Footer() {
               <Link
                 className="hover:text-black dark:hover:text-white transition"
                 target="_blank"
-                to="/resume.pdf"
+                to={resume}
               >
                 Resume
               </Link>

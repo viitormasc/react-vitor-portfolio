@@ -24,7 +24,7 @@ const PortfolioSection: React.FC = () => {
             dashboards, and tools.
           </p>
 
-          <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-2">
             {projects.map((project) => (
               <ProjectCard key={project.title} {...project} />
             ))}

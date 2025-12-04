@@ -96,7 +96,6 @@ export const Hero = () => {
             GitHub
           </Link>
           <Link href={resume} target="_blank">
-            {" "}
             <DownloadIcon className="mr-1" /> Download Cv
           </Link>
         </div>
