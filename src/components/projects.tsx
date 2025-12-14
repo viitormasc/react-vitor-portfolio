@@ -14,7 +14,9 @@ import React from "react";
 
 import sassStarterKit from "../assets/print2.png";
 import codetotext from "../assets/codetotext.png";
-import vitcoinLogo from "../assets/vitcoinLogo.png"
+import vitcoinLogo from "../assets/vitcoinLogo.png";
+import bittorrentCliLogo from "../assets/bittorrent-nobg.png";
+
 import StudyTimerPhoto from "@/assets/Study Timer App PC Web Google Ad Landscape.png";
 
 interface ProjectItem {
@@ -85,8 +87,7 @@ const projects: ProjectItem[] = [
       "A fully TypeScript-powered blockchain featuring secure wallets, verifiable transactions, a functional Proof-of-Work consensus mechanism, and a clean UI for visualizing balances, sending coins, and tracking activity in real time. The backend integrates HTTP for client requests and WebSockets for instant blockchain state propagation across the network, ensuring that every node receives updates the moment new blocks are mined or transactions are broadcast.",
     image: vitcoinLogo,
     // liveUrl: "https://studytimerapp.com",
-    githubUrl:
-      "https://github.com/viitormasc/VitorCoin",
+    githubUrl: "https://github.com/viitormasc/VitorCoin",
     techIcons: [
       <SiReact color="#61dafb" />,
       <SiTailwindcss color="#38bdf8" />,
@@ -95,8 +96,14 @@ const projects: ProjectItem[] = [
       <SiExpress color="white" />,
     ],
   },
-
-
+  {
+    title: "My own BitTorrent CLI tool for download .torrent files ",
+    description:
+      "A lightweight command-line BitTorrent client built to explore the BitTorrent protocol from the ground up. It parses .torrent metadata, performs peer handshakes, exchanges bitfields, downloads and verifies pieces via SHA-1 hashing, and manages concurrent peer connections for efficient file transfers — all directly from the terminal with no GUI.",
+    image: bittorrentCliLogo,
+    githubUrl: "https://github.com/viitormasc/my-own-bittorrent",
+    techIcons: [<SiNodedotjs color="white" />],
+  },
 ];
 
 export default projects;

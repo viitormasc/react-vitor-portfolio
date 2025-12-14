@@ -34,7 +34,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
       <div className="w-full overflow-hidden rounded-xl">
         <img
           alt={title}
-          className="w-full h-48 object-cover rounded-xl"
+          className="w-full h-60 object-contain rounded-xl"
           src={image}
         />
       </div>
