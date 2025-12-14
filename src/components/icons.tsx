@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import logo from "../assets/CodeByVitor-withotu-bg.png";
+import logo from "../assets/CodeByVitor-withotu-bg.webp";
 
 import { IconSvgProps, LogoImgProps } from "@/types";
 
