@@ -26,7 +26,7 @@ fi
 docker compose -p "$PROJECT" up -d --remove-orphans
 
 docker images "$IMAGE" --format '{{.Tag}}' \
-  | grep -vx -e "$IMAGE_TAG" -e latest \
+  | { grep -vx -e "$IMAGE_TAG" -e latest || true; } \
   | tail -n +3 \
   | xargs -r -I{} docker rmi "$IMAGE:{}"
 
