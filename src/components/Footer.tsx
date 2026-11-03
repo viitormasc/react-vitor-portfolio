@@ -75,6 +75,15 @@ export default function Footer() {
                 Github
               </Link>
             </li>
+            <li>
+              <Link
+                className="hover:text-black dark:hover:text-white transition"
+                target="_blank"
+                to={siteConfig.links.gitlab}
+              >
+                GitLab (professional work)
+              </Link>
+            </li>
           </ul>
         </div>
 

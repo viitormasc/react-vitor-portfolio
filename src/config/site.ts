@@ -41,6 +41,7 @@ export const siteConfig = {
   ],
   links: {
     github: "https://github.com/viitormasc",
+    gitlab: "https://gitlab.com/viitormasc",
     twitter: "https://twitter.com/hero_ui",
     linkedin: "https://linkedin.com/in/vitor-mascarenhas",
     whatsapp: "https://api.whatsapp.com/send?phone=5586999277389",

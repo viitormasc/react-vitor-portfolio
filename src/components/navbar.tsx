@@ -9,6 +9,7 @@ import {
   NavbarMenuItem,
 } from "@heroui/navbar";
 import { Linkedin } from "lucide-react";
+import { SiGitlab } from "react-icons/si";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
@@ -53,6 +54,9 @@ export const Navbar = () => {
           <Link isExternal href={siteConfig.links.github} title="GitHub">
             <GithubIcon className="text-default-500" />
           </Link>
+          <Link isExternal href={siteConfig.links.gitlab} title="GitLab">
+            <SiGitlab className="text-default-500" size={22} />
+          </Link>
           <ThemeSwitch />
         </NavbarItem>
       </NavbarContent>
@@ -64,6 +68,9 @@ export const Navbar = () => {
 
         <Link isExternal href={siteConfig.links.github}>
           <GithubIcon className="text-default-500" />
+        </Link>
+        <Link isExternal href={siteConfig.links.gitlab} title="GitLab">
+          <SiGitlab className="text-default-500" size={22} />
         </Link>
         <ThemeSwitch />
         {/* <NavbarMenuToggle /> */}

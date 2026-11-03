@@ -4,13 +4,16 @@ import { BrowserRouter } from "react-router-dom";
 
 import App from "./App.tsx";
 import { Provider } from "./provider.tsx";
+import { ModeProvider } from "./context/mode.tsx";
 import "@/styles/globals.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
       <Provider>
-        <App />
+        <ModeProvider>
+          <App />
+        </ModeProvider>
       </Provider>
     </BrowserRouter>
   </React.StrictMode>,

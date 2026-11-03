@@ -2,6 +2,7 @@ import { Avatar } from "@heroui/avatar";
 import { Link } from "@heroui/link";
 import { button as buttonStyles } from "@heroui/theme";
 import { Linkedin, DownloadIcon } from "lucide-react";
+import { SiGitlab } from "react-icons/si";
 
 import resume from "../assets/Resume vitor dev.pdf";
 import photo from "../assets/perfilvitor.png";
@@ -61,7 +62,7 @@ export const Hero = () => {
             cursorCharacter="|"
             pauseDuration={1500}
             showCursor={true}
-            text={["Full-Stack", "Backend", "Frontend"]}
+            text={["Backend", "Full-Stack", "Go"]}
             // textColors={["violet"]}
             typingSpeed={75}
             variableSpeed={{ min: 50, max: 120 }}
@@ -69,8 +70,11 @@ export const Hero = () => {
           <br />
           <span className={title()}> Software Engineer</span>
           <div className={subtitle({ class: "mt-4" })}>
-            Building beautiful responsive frontends and reliable scalable
-            backends!
+            Building reliable, scalable backends in Go, Node and Lua, with clean
+            frontends to match!
+            <span className="mt-2 block text-sm opacity-70">
+              Most of my professional work lives in private repos on GitLab.
+            </span>
           </div>
         </div>
 
@@ -94,6 +98,15 @@ export const Hero = () => {
           >
             <GithubIcon size={20} />
             GitHub
+          </Link>
+          <Link
+            isExternal
+            className={buttonStyles({ variant: "bordered", radius: "full" })}
+            href={siteConfig.links.gitlab}
+            title="Professional work (private repos)"
+          >
+            <SiGitlab color="#fc6d26" size={18} />
+            GitLab
           </Link>
           <Link href={resume} target="_blank">
             <DownloadIcon className="mr-1" /> Download Cv

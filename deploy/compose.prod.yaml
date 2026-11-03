@@ -1,0 +1,13 @@
+name: portfolio
+
+services:
+  portfoliofront:
+    image: ghcr.io/viitormasc/react-vitor-portfolio:${IMAGE_TAG:?IMAGE_TAG is required}
+    container_name: portfoliofrontend
+    restart: unless-stopped
+    networks:
+      - caddy_net
+
+networks:
+  caddy_net:
+    external: true
